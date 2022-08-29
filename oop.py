@@ -4,11 +4,14 @@
 # KAPSÜLLEME
 # SOYUTLAMA
 
-"""OOP Prensiplerinde amaç
+"""
+OOP Prensiplerinde amaç
 -> Bir kodun yeniden kullanılabilirliğini sağlama
 -> Kodun  tekrar etmesini önleme
 -> Sınıflar birbiri ile ilişki kurarken olabilidğince esnek olmalı
 -> Sınıflar birbirlerine bağımlı olmamalıdır
 """
 
-me
+"""
+Kalıtımın Dezavantajları
+"""
