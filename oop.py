@@ -10,3 +10,5 @@
 -> Sınıflar birbiri ile ilişki kurarken olabilidğince esnek olmalı
 -> Sınıflar birbirlerine bağımlı olmamalıdır
 """
+
+me
