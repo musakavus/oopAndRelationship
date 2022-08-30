@@ -25,4 +25,8 @@ değil diğer tüm sınıfların super fonksiyonunda bu id yi tanımlamamız laz
 ESNEKLİK BOZULDU. O yüzden olabilidğince kalıtımı gerekli durumlarda kullanmalıyız
 """
 
-
+"""
+AGGREGATION
+-> Sahiplik anlamına gelir.
+-> İki sınıf arasında birbirinin parçası olma anlamı vardır
+"""
