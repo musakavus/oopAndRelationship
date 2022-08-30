@@ -24,7 +24,8 @@ class Person:
 
 
 p1 = Person('Mina', 'Kavuş')
-p1.this_id.create_id(184513515)
+p1.this_id.create_id(184513515)  # Comp. faydası burda. Referans sayesinde diğer classın özelliğine ulaşabiliyoruz.
+# Bu da bize esneklik sağlar
 print(p1)  # ___str__ yada __repr__ metodu sayesinde classdan direk string şeklinde çıktı aldık
 
 """AYNI ŞEYİ KALITIMLA YAPMAYA ÇALIŞALIM"""
@@ -51,6 +52,6 @@ class Kimlik(Insan):
 
 i1 = Insan('Mina', 'Kavuş')
 k1 = Kimlik('Mina', 'Kavuş')
-k1.create_id(152132315)  # Sıkıntı şurda başlıyor. k1. dedikten sonra insan sınıfının tüm özelliklerine ulaşabiliyorum
+k1.create_id(152132315)  # Sıkıntı şurda başlıyor -> k1. dedikten sonra insan sınıfının tüm özelliklerine ulaşabiliyorum
 # Burda inheritance bize esneklik sağlamaz
 print(i1, k1)
