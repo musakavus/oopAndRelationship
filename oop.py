@@ -26,10 +26,21 @@ ESNEKLİK BOZULDU. O yüzden olabilidğince kalıtımı gerekli durumlarda kulla
 """
 
 """
-AGGREGATION
+AGGREGATION ( HAS A )
 -> Sahiplik anlamına gelir.
 -> Has A ilişkisi vardır
 -> İki sınıf arasında birbirinin parçası olma anlamı vardır.
--> Ama bu bağ zayıftır. Üniversite ve akademisyenler örnek verilebilir.
--> Üniversiteler kapanırsa akademisyenler görevlerine başka yerde devam edebilir.
+-> Ama bu bağ zayıftır. Fakülte ve akademisyenler örnek verilebilir.
+-> Fakülteler kapanırsa akademisyenler görevlerine başka fakültede devam edebilir.
+
+COMPOSİTİON ( HAS A + PART OF)
+-> Bu da sahiplik anlamına gelir.
+-> İki sınıf arasında birbirinin parçası olma anlamı vardır
+-> Ancak aggregationdan farkı bu bağ oldukça kuvvetlidir.
+-> Üniversite Fakülte. Fakülteler olmazsa üniversiteler de olamaz aynı şekilde tam tersi de.
+
+
+DEPENDENCY
+-> Nesnelerden biri değişirse diğeri de değişir.
+-> Sınıfların birbirine bu denli bağlı olması pek tavsie edilmez
 """
