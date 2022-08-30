@@ -7,6 +7,9 @@ class ID:
     def __str__(self):
         return str(self.id_no)
 
+    # def __repr__(self): -> __str__ işlevinin aynısını __repr__ dunder metodu da yapar
+    #     return str(self.id_no)
+
 
 class Person:
     def __init__(self, name, surname):  # Composition kısmı için en ideal yer constructor bölümüdür
