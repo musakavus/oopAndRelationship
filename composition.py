@@ -26,3 +26,27 @@ class Person:
 p1 = Person('Mina', 'Kavuş')
 p1.this_id.create_id(184513515)
 print(p1)  # ___str__ yada __repr__ metodu sayesinde classdan direk string şeklinde çıktı aldık
+
+"""AYNI ŞEYİ KALITIMLA YAPMAYA ÇALIŞALIM"""
+
+
+class Insan(object):
+    def __init__(self, name, surname):
+        self.name = name
+        self.surname = surname
+
+    def __str__(self):
+        return f'{self.name} {self.surname}'
+
+
+class Kimlik(Insan):
+    def __init__(self, name, surname, id_no):
+        super().__init__(name, surname)
+        self.id_no = id_no
+
+    def __str__(self):
+        return f'{self.name} {self.surname} {str(self.id_no)}'
+
+
+k1 = Kimlik('Mina', 'Kavuş', 150101554)
+print(k1)
