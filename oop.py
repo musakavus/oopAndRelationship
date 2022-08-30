@@ -51,5 +51,3 @@ KALITIM (IS - A)
 -> Ali is a student
 -> A duck is an animal
 """
-
-

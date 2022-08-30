@@ -9,10 +9,10 @@ class ID:
 
 
 class Person:
-    def __init__(self, name, surname): # Composition kısmı için en ideal yer constructor bölümüdür
+    def __init__(self, name, surname):  # Composition kısmı için en ideal yer constructor bölümüdür
         self.name = name
         self.surname = surname
-        self.this_id = ID()
+        self.this_id = ID()  # Class içerisinde self.tihs_id isminde ID() classından referans oluşturuk.
 
     def __str__(self):
         return f'{self.name} {self.surname} {str(self.this_id)}'
