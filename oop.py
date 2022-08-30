@@ -28,5 +28,8 @@ ESNEKLİK BOZULDU. O yüzden olabilidğince kalıtımı gerekli durumlarda kulla
 """
 AGGREGATION
 -> Sahiplik anlamına gelir.
--> İki sınıf arasında birbirinin parçası olma anlamı vardır
+-> Has A ilişkisi vardır
+-> İki sınıf arasında birbirinin parçası olma anlamı vardır.
+-> Ama bu bağ zayıftır. Üniversite ve akademisyenler örnek verilebilir.
+-> Üniversiteler kapanırsa akademisyenler görevlerine başka yerde devam edebilir.
 """
