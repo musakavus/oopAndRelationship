@@ -17,7 +17,7 @@ class Person:
         self.surname = surname
         self.this_id = ID()  # Class içerisinde self.tihs_id isminde ID() classından referans oluşturuk.
 
-    def __str__(self):
+    def __str__(self):  # Bir classın standart str çıktısıdır.
         return f'{self.name} {self.surname} {str(self.this_id)}'
 
 
