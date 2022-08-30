@@ -53,5 +53,5 @@ class Kimlik(Insan):
 i1 = Insan('Mina', 'Kavuş')
 k1 = Kimlik('Mina', 'Kavuş')
 k1.create_id(152132315)  # Sıkıntı şurda başlıyor -> k1. dedikten sonra insan sınıfının tüm özelliklerine ulaşabiliyorum
-# Burda inheritance bize esneklik sağlamaz
+# O yüzden bu programda kalıtımı kullanmak  bize esneklik sağlamaz
 print(i1, k1)
