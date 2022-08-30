@@ -40,13 +40,17 @@ class Insan(object):
 
 
 class Kimlik(Insan):
-    def __init__(self, name, surname, id_no):
-        super().__init__(name, surname)
-        self.id_no = id_no
+    id_no = None
+
+    def create_id(self, id_number):
+        self.id_no = id_number
 
     def __str__(self):
-        return f'{self.name} {self.surname} {str(self.id_no)}'
+        return str(self.id_no)
 
 
-k1 = Kimlik('Mina', 'Kavuş', 150101554)
-print(k1)
+i1 = Insan('Mina', 'Kavuş')
+k1 = Kimlik('Mina', 'Kavuş')
+k1.create_id(152132315)  # Sıkıntı şurda başlıyor. k1. dedikten sonra insan sınıfının tüm özelliklerine ulaşabiliyorum
+# Burda inheritance bize esneklik sağlamaz
+print(i1, k1)
