@@ -43,4 +43,13 @@ COMPOSİTİON ( HAS A + PART OF)
 DEPENDENCY
 -> Nesnelerden biri değişirse diğeri de değişir.
 -> Sınıfların birbirine bu denli bağlı olması pek tavsie edilmez
+
+
+KALITIM (IS - A)
+-> Birlik anlamına gelir.
+-> İki sınıf arasında kalıtım kullanabilmek için is-a ilişkisi var mı bakmak lazım
+-> Ali is a student
+-> A duck is an animal
 """
+
+
