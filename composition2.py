@@ -17,6 +17,7 @@ class Library(University):
         self.lib_id = lib_id
 
     def create_book(self):  # Daha önce contructor içerisinde referans oluşturmuştuk şimdi normal metod içerisinde
+        # Hatırlatmakta fayda var en mantıklısı constructor içerisinde oluşturmaktır.
         self.kitap = Book()
 
     def __repr__(self):
