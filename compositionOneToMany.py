@@ -10,7 +10,7 @@ class University(ABC):
 
 
 class Library(University):
-    kitap = None
+    kitap = []
 
     def __init__(self, lib_name, lib_id):
         self.lib_name = lib_name
