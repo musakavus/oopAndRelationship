@@ -6,7 +6,7 @@ from abc import ABC, abstractmethod
 class University(ABC):
     def create_book(self): pass
 
-    def add_book(self, book_name, book_id): pass
+    def add_book(self, book_name, book_id): pass  # Normal metodda hangi parametreler varsa abs class içindede olmalı
 
 
 class Library(University):
