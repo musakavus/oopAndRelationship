@@ -1,4 +1,6 @@
+# COMPOSİTİON
 # ONE TO ONE RELATİON
+# HAS A İLİŞKİSİ VARDIR
 class ID:
     id_no = None
 

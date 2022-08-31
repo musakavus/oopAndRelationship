@@ -1,4 +1,6 @@
+# COMPOSİTİON
 # ONE TO MANY RELATİON
+# HAS A İLİŞKİ VARDIR
 
 from abc import ABC, abstractmethod
 
