@@ -1,3 +1,4 @@
+# ONE TO ONE RELATİON
 class ID:
     id_no = None
 

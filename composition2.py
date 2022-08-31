@@ -1,4 +1,4 @@
-# amaç inheritance kullanmadan bir sınıfın elemanlarına base class içerisinde referans yoluyla ulaşabilmek.
+# ONE TO ONE RELATİON
 
 from abc import ABC, abstractmethod
 
