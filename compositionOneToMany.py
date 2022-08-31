@@ -1,41 +1,41 @@
-# ONE TO ONE RELATİON
+# ONE TO MANY RELATİON
 
 from abc import ABC, abstractmethod
 
 
-class University(ABC):
-    def create_book(self): pass
+class BlokChain(ABC):
+    def create_coin(self, coin_id, name): pass
 
-    def add_book(self, book_name, book_id): pass  # Normal metodda hangi parametreler varsa abs class içindede olmalı
-
-
-class Library(University):
-    kitap = []
-
-    def __init__(self, lib_name, lib_id):
-        self.lib_name = lib_name
-        self.lib_id = lib_id
-
-    def create_book(self):  # Daha önce contructor içerisinde referans oluşturmuştuk şimdi normal metod içerisinde
-        # Hatırlatmakta fayda var en mantıklısı constructor içerisinde oluşturmaktır.
-        self.kitap = Book()
-
-    def __repr__(self):
-        return f'Kütüphane Adı: {self.lib_name}  \nKütüphane Id:{str(self.lib_id)} \nKitap {self.kitap}'
+    def add_coin(self): pass
 
 
-class Book(University):
+class Binance(BlokChain):
+    def __init__(self, name, year):
+        self.coin = None
+        self.name = name
+        self.year = year
+
+    def add_coin(self):
+        self.coin = Coin()
+
+    def __str__(self):
+        return f'{self.name} {str(self.year)} \n{self.coin}'
+
+
+class Coin(BlokChain):
 
     def __init__(self):
-        self.book_name = None
-        self.book_id = None
+        self.coinList = []  # Liste şeklinde ekleme yapıldı
 
-    def __repr__(self):
-        return f'Kitap ismi: {self.book_name} \nKitap Id: {str(self.book_id)}'
+    def create_coin(self, coin_id, name):
+        self.coinList.append({coin_id, name})
+
+    def __str__(self):
+        return f'{str(self.coinList)}'
 
 
-l1 = Library('Yılmaz Güney', 15631)
-l1.create_book()
-l1.kitap.book_id = 13252
-l1.kitap.book_name = 'Denizler Altında 80 bin Fersah'
-print(l1)
+b1 = Binance('Binance', 2013)
+b1.add_coin()
+b1.coin.create_coin(2022, 'ENS')
+b1.coin.create_coin(2019, 'DOGE')
+print(b1)
