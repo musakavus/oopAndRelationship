@@ -34,6 +34,8 @@ class Bolum(UniAbstract):
 
     def bolum_ekle(self, akademisyen_adi):
         self.akademisyen_adi: Akademisyen = akademisyen_adi
+        # sayi : int yaparak sayinin int cinsinden olduğunu belirtirim
+        # aynı şekilde akademisyen_adi : akademisyen dersem bununda Akademisyen sınıfı cinsinden olduğunu blrtmiş olurum
 
     def __repr__(self):
         return f'{self.akademisyen_adi} \n{self.bolum_adi}'
