@@ -1,6 +1,7 @@
 # COMPOSİTİON
 # ONE TO ONE RELATİON
 # HAS A İLİŞKİSİ VARDIR
+# iki class da birbirine bağlıdır. Person classı olmadan 
 class ID:
     id_no = None
 
