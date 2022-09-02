@@ -51,3 +51,35 @@ print(t1.player.player_age)
 print(t1.player.player_name)
 print(t1.player.player_value)
 print(t1.player.status)
+
+print()
+
+
+class Cripto:
+    def __init__(self, company_name, company_date):
+        self.company_name = company_name
+        self.company_date = company_date
+        self.coin = None
+
+    def add_coin(self, coin):
+        self.coin: Coin = coin
+
+    def __str__(self):
+        return f'{self.company_name} {str(self.company_date)} {str(self.coin)}'
+
+
+class Coin:
+    def __init__(self, coin_name, release_date, value):
+        self.coin_name = coin_name
+        self.release_date = release_date
+        self.value = value
+
+    def __repr__(self):
+        return f'{self.coin_name}\n{self.release_date}\n{str(self.value)}'
+
+
+co1 = Coin('BNB', '2022', 2.40)
+cr1 = Cripto('Binance', 2023)
+cr1.add_coin(co1)
+
+print(cr1)
