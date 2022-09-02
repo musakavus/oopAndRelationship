@@ -2,10 +2,14 @@ from abc import ABC, abstractmethod
 
 
 class SoccerAbstract(ABC):
-    pass
+    def add_player(self, player):
+        pass
+
+    def player_property(self):
+        pass
 
 
-class Team(ABC):  # Team <-> Player bağ zayıf o yüzden Aggregation
+class Team(SoccerAbstract):  # Team <-> Player bağ zayıf o yüzden Aggregation
     def __init__(self, team_name, team_value):
         self.team_name = team_name
         self.team_value = team_value
